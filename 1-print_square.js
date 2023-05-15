@@ -1,11 +1,10 @@
-#!/usr/bin/node
+#!/usr/bin/env node
 /*
     Print a square with the character #
     
     The size of the square must be the first argument 
     of the program.
 */
-
 
 if (process.argv.length <= 2) {
     process.stderr.write("Missing argument\n");
@@ -22,3 +21,4 @@ for (let i = 0 ; i < size ; i ++) {
     }
     process.stdout.write("\n");
 }
+
